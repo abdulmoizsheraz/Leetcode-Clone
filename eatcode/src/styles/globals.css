@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #0e1111;
+  overflow-x: hidden;
+}
+.nav{
+  background: rgb(25,16,16);
+background: linear-gradient(90deg, rgba(25,16,16,1) 0%, rgba(255,255,0,1) 100%);
+}
+.div-loginSignup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 12px;
+    padding:  12px 12px;
+    margin-right: 120px;
+    height: 50px;
+    width: 200px;
+  }
+  .btn-signup{
+    margin:0px 12px;
+    font-weight: bolder;
+    border-radius: 14px;
+  }
+  
+  .btn-login{
+    margin:0px 8px;
+    font-weight: bolder;
+    width: 82px;
+    height: 50px;
+  }
+  
+  /* Componet */
+    
+  .login-signup-container {
+    position: absolute;
+    top: 50px;
+    right: 472px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 700px;
+   
+  }
+  
+  .login-form-container {
+    font-weight: bold;
+    color: white;
+  background: rgba(49, 48, 48, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(49, 48, 48, 0.33);
+    overflow: hidden;
+    width: 561px;
+    height: 70vh;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .form {
+    padding: 40px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    background: none;
+  }
+  
+  .form-group input:focus,
+  .form-group input:valid {
+    border-bottom-color: red;
+  }
+  
+  .form-group label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    color: #fff;
+    padding:  10px 12px;
+  background-color: white;
+  color: black;
+  border-radius:34px ;
+  }
+  .expandbtn{
+    position: absolute;
+    bottom: 6px;
+    height: 13px;
+  }
+  .split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+.problemdes{
+  background-color: #252727;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.gutter.gutter-horizontal {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+	cursor: col-resize;
+}
+
+
+
+
+.gutter {
+	background-color: rgb(26, 26, 26);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.gutter:hover {
+	background-color: #0a84ff;
+}
+.code {
+	border-radius: 5px;
+	border-width: 1px;
+	font-family: sans-serif;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1rem;
+	padding: 1rem;
+	letter-spacing: 1px;
+	white-space: pre-wrap;
+	background-color: hsla(0, 0%, 100%, 0.07);
+	border-color: rgba(247, 250, 255, 0.12);
+	color: rgba(239, 241, 246, 0.75);
+}
+.cons{
+  background-color: hsla(0, 0%, 100%, 0.1);
+	border-radius: 0.5rem;
+	color: rgba(239, 241, 246, 0.75);
+	font-size: 0.98rem;
+	line-height: 1.25rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	white-space: pre-wrap;
+}
+
+.gutter {
+  background-color: #252727;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  cursor: row-resize;
+}
